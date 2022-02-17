@@ -10,3 +10,11 @@ class GetAllProductsFailure extends Failure {
     required this.message,
   });
 }
+
+class DeleteProductFailure extends Failure {
+  @override
+  final String message;
+  DeleteProductFailure({
+    required this.message,
+  });
+}

@@ -1,4 +1,4 @@
-import 'package:crud_product/app/modules/home/domain/entities/pruduct_home_entity.dart';
+import 'package:crud_product/app/modules/home/domain/entities/pruduct_entity.dart';
 import 'package:crud_product/app/modules/home/domain/erros/erros.dart';
 import 'package:crud_product/app/modules/home/domain/repositories/product_repository_interface.dart';
 import 'package:crud_product/app/modules/home/domain/usecases/get_all_products_usecase.dart';
@@ -18,15 +18,15 @@ void main() {
     usecase = GetAllProductsUsecase(repository: repository);
   });
 
-  const listProducts = <ProductHomeEntity>[
-    ProductHomeEntity(
+  const listProducts = <ProductEntity>[
+    ProductEntity(
       id: '2',
       title: 'title',
       description: 'description',
       price: 5,
       image: 'image',
     ),
-    ProductHomeEntity(
+    ProductEntity(
         id: '5',
         title: 'title',
         description: 'description',
