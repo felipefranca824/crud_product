@@ -6,4 +6,6 @@ import 'package:dartz/dartz.dart';
 abstract class ProductRepositoryInterface {
   Future<Either<Failure, ProductEntity>> saveProduct(
       {required SaveProductEntity product});
+  Future<Either<Failure, ProductEntity>> updateProduct(
+      {required ProductEntity product});
 }

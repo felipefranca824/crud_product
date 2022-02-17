@@ -9,3 +9,11 @@ class SaveProductFailure extends Failure {
     required this.message,
   });
 }
+
+class UpdateProductFailure extends Failure {
+  @override
+  final String message;
+  UpdateProductFailure({
+    required this.message,
+  });
+}
